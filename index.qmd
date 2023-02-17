@@ -80,6 +80,7 @@ Theoretische Motivierung [{{< fa book-open >}}]{.imp}
 :::
 
 ::: incremental
+-   Erwartung an Lehrpersonen: datengestütztes Treffen von Handlungsentscheidungen (DBDM). 
 -   Erwartung an Lehrpersonen: datengestütztes Treffen von Handlungsentscheidungen (DBDM)
 -   zentrale Voraussetzungen für gelingendes DBDM auf individueller Ebene (u.a.) [@datnow2015; @hoogland2016; @schildkamp2014]:
     -   hinreichend ausgeprägte data literacy
