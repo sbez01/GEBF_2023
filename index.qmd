@@ -1,0 +1,287 @@
+---
+title: "Data Literacy bei Lehramtsstudierenden:"
+author: "Sarah Bez, Sebastian Wurster, Samuel Merk"
+subtitle: "Fördert eine Intervention zu Data Literacy auch motivationale Überzeugungen zu datengestützten Entscheidungen?"
+format: 
+  revealjs:
+    title-slide-attributes:
+      data-background-image: img/sash.svg
+      data-background-size: 30%
+      data-background-position: 0 0
+    slide-number: true
+    controls: true
+    logo: https://drive.google.com/uc?export=view&id=1Eoy1slqV_DDgG50f3V6tc6QvFnhCBE1H
+    theme: [dark, css/custom.scss]
+    chalkboard:
+      theme: whiteboard
+      boardmarker-width: 3
+      buttons: true
+      chalk-effect: 0
+    fullscreen: true
+    pdfexport: true
+bibliography: references.bib
+editor_options: 
+  chunk_output_type: console
+---
+
+## <!-- Theo Mot--> {auto-animate="true"}
+
+```{r hidden chunk which creates template stuff}
+#| echo: false
+
+library(fontawesome)
+library(tidyverse)
+# Change css to lecker PH green
+if(!dir.exists("css"))
+dir.create("css")
+fileConn<-file("css/custom.scss")
+writeLines(c("/*-- scss:defaults --*/",
+             "$link-color: #8cd000 !default;"), fileConn)
+close(fileConn)
+
+# create sash with URL
+sash <- 
+  ggplot() + 
+  geom_polygon(data = tibble(x = c(0,4,5.5,0),
+                             y = c(1,5,5,-.5)),
+               aes(x,y), fill = "#8cd000") + 
+  coord_fixed() +
+  annotate(geom = "text", 
+           label = "www.bit.ly/anpassen", 
+           x = .8, y = .8, 
+           angle = 45,
+           hjust = 0, vjust = 0,
+           size = 10,
+           color = "white",
+           family="Courier") +
+ theme_void() + 
+ theme(plot.margin = margin(-2,0,0,-12, unit = "cm"))
+ggsave("img/sash.svg", sash)
+```
+
+```{css}
+.imp {
+  color: #8cd000;
+}
+```
+
+::: {style="margin-top: 300px; font-size: 2em; color:#8cd000; margin-left: 110px;"}
+[Theoretische Motivierung {{< fa book-open >}}]{.imp}
+:::
+
+::: footer
+Slides: bit.ly/XYZ
+:::
+
+## <!-- Theo Mot--> {.smaller auto-animate="true"}
+
+::: {style="margin-top: 0px;font-size: 1.5em; color:#ffffff; margin-left: 0px;"}
+Theoretische Motivierung [{{< fa book-open >}}]{.imp}
+:::
+
+::: incremental
+-   Erwartung an Lehrpersonen: datengestütztes Treffen von Handlungsentscheidungen (DBDM)
+-   zentrale Voraussetzungen für gelingendes DBDM auf individueller Ebene (u.a.) [@datnow2015; @hoogland2016; @schildkamp2014]:
+    -   hinreichend ausgeprägte data literacy
+    -   entsprechende motivationale Überzeugungen\
+-   gleichzeitig:
+    -   eher gering ausgeprägte data literacy [z.B. @kippers2018; @vanderkleij2013]
+    -   wird DBDM von Lehrpersonen als herausfordernd wahrgenommen [z.B. @espin2018; @vangeel2017] TEST
+:::
+
+. . .
+
+→ diesbezügliche Professionalisierungsprozesse (auch schon) im Studium anstoßen  \
+
+## Data Literacy {.smaller}
+
+"the ability to transform information into actionable instructional knowledge and practices by collecting, analyzing, and interpreting all types of data (assessment, school climate, behavioral, snapshot, longitudinal, moment-to-moment, etc.) to help determine instructional steps" [@mandinach2016a, S. 367]
+
+. . .
+
+![[Modell nach @mandinach2016a]](img/Mandinach_Gummer.png){width="753"}
+
+## Motivationale Überzeugungen
+
+-   hier konzeptualisiert als Erwartungs- X Wert-Modelle [@eccles2002]
+    -   Expectancy (Erwartungskomponente), häufig self-efficacy
+    -   Value (Wertkomponente/n), häufig attainment, enjoyment, utility, cost 
+
+##  {.smaller}
+
+### Förderung von data literacy und motivationalen Überzeugungen bzgl. DBDM
+
+Aktuelle Metaanalyse [@filderman2021] berichtet
+
+-   starke positive Effekte auf Wissen und Kompetenzen *(g = .67; 95% CI = \[.40, .93\])*
+
+-   moderate positive Effekte auf beliefs *(g = .48; 95% CI = \[.17, .79\])*
+
+    -   expectancy-Komponente: *g* = -.74 bis *g* = 3.68
+
+    -   value-Komponente: *g* = -.43 bis *g* = 1.25
+
+. . .
+
+insgesamt (nur Interventionsstudien mit Lehramtsstudierenden):
+
+-   data literacy: moderate bis große positive signifikate Effekte [@merk2020; @reeves2017; @reeves2017]
+
+    -   self-efficacy: moderate bis große positive (aber nicht immer signifikante) Effekte [@reeves2017; @reeves2018; @reeves2019; @thoren2020]
+
+    -   value-Komponenten: kleine bis moderate, meist nicht-signifikante Effekte [@thoren2020]
+
+## <!-- Theo Mot--> {auto-animate="false"}
+
+::: {style="margin-top: 300px; font-size: 2em; color:#8cd000; margin-left: 110px;"}
+[die vorliegende Studie {{< fa magnifying-glass >}}]{.imp}
+:::
+
+## Forschungsfragen und Hypothesen
+
+> Inwiefern lassen sich data literacy und motivationale Überzeugungen in einer Online-Kurzintervention fördern? 
+
+<br/>
+
+. . .
+
+H1: $Δ_{Kontrollgruppe} = 0$ & $Δ_{Interventionsgruppe} = 0$
+
+H2: $Δ_{Kontrollgruppe} = 0$ & $Δ_{Kontrollgruppe}$ \< $Δ_{Interventionsgruppe}$
+
+H3: $Δ_{Kontrollgruppe}$ \< $Δ_{Interventionsgruppe}$
+
+## Design \| Stichprobe
+
+-   Design
+    -   Randomized-Controlled-Trial (RCT), Wartekontrollgruppendesign
+-   Stichprobe
+    -   Lehramtsstudierende {{< fa users >}}
+    -   $N = 136$
+    -   $M_{Semester} = 5.5$, $SD_{Semester} = 1.4$
+    -   61% kein MINT-Fach
+    -   63% {{< fa venus >}}
+
+## Design \| Intervention {.smaller}
+
+-   6stündige data literacy-Intervention, entwickelt von @merk2020, angelehnt an @mandinach2016a
+-   Fokus auf
+    -   Einführung in DBDM: Chancen und Herausforderungen\
+    -   (Quantitative) Datenanalyse: Zentrale Tendenz, Streuung, Verteilungsformen, ...\
+    -   Dateninterpretation: Bezugsnormen, Mittelwertsunterschiede, ...
+
+##  {.smaller}
+
+### Design \| Instrumente
+
+{{< ai open-materials >}} https://bit.ly/3Wi7sI4
+
+#### Data literacy-Test [@merk2020]
+
+-   entwickelt für Studierende
+-   ggf. hier noch Beispielitems zeigen
+
+#### Motivationale Überzeugungen
+
+-   Instrument von [@thoren2020]
+
+##  {.smaller}
+
+![](img/items_motivational%20beliefs.png){fig-align="left" width="800"}
+
+##  {.smaller}
+
+### Faktorenstruktur und Reliabilitäten
+
+![](img/items_faktorenanalyse.png){fig-align="left" width="900"}
+
+3-Faktoren-Modell auf der Basis von CREFA (*𝝌2*(df) = 81.304 (42), *p* = \<.001, CFI = .96, TLI = .92, RMSA = .09, .77 ≤ 𝜔 ≤ .92)
+
+## Statistische Analysen
+
+Multi-group Latent-Change-Score-Modelle [@kievit2018] für Effekte der Intervention auf
+
+-   data literacy-Testscore\
+-   die drei Faktoren bzgl. DBDM für jede Komponente der motivationalen Überzeugungen
+
+. . .
+
+Um auch Evidenz nicht nur gegen sondern auch für einen Nulleffekt generieren zu können: Anwendung von Bayesianischem Hypothesentesten für Strukturgleichungsmodelle [@gu2019]
+
+##  {.smaller}
+
+### Ergebnisse \| visualisiert
+
+![](img/Plot_Effects_of_Intervention.png){fig-align="left"}
+
+##  {.smaller}
+
+### Ergebnisse \| Effektstärken und Inferenz
+
+für data literacy und jeden Faktor pro Komponente jeweils:
+
+-   H1: $Δ_{Kontrollgruppe} = 0$ & $Δ_{Interventionsgruppe} = 0$\
+-   H2: $Δ_{Kontrollgruppe} = 0$ & $Δ_{Kontrollgruppe}$ \< $Δ_{Interventionsgruppe}$\
+-   H3: $Δ_{Kontrollgruppe}$ \< $Δ_{Interventionsgruppe}$
+
+Tabelle mit pie charts einfügen
+
+## <!-- Disk--> {auto-animate="true"}
+
+::: {style="margin-top: 300px; font-size: 2em; color:#8cd000; margin-left: 110px;"}
+[Diskussion {{< fa arrows-to-circle >}}]{.imp}
+:::
+
+## <!-- Disk--> {.smaller auto-animate="true"}
+
+::: {style="margin-top: 0px;font-size: 1.5em; color:#ffffff; margin-left: 0px;"}
+Diskussion [{{< fa arrows-to-circle >}}]{.imp}
+:::
+
+. . .
+
+**zentrale Ergebnisse**
+
+-   großer positiver Effekt auf data literacy
+-   generell positive motivationale Überzeugungen
+-   bis auf self-efficacy und utility (jeweils moderater positiver Effekt) bleiben motivationale Überzeugungen stabil
+
+. . .
+
+**Limitationen**
+
+-   Intervention auf data literacy und weniger auf Förderung motivationaler Überzeugungen
+-   keine follow-up-Messung
+-   eingeschränkte curriculare Validität des data literacy-Tests aufgrund des Fokuses auf Datenanalyse
+
+## <!-- Theo Mot--> {.smaller auto-animate="true"}
+
+::: {style="margin-top: 0px;font-size: 1.5em; color:#ffffff; margin-left: 0px;"}
+Diskussion [{{< fa arrows-to-circle >}}]{.imp}
+:::
+
+**Ausblick und anschließende Forschungsfragen**
+
+::: incremental
+-   Entwicklung (und ggf. Förderung?) motivationaler Überzeugungen über alle Phasen der Lehrer:innenbildung
+-   Verhältnis von "generischer" data literacy, "spezifischen" DBDM-Situationen im beruflichen Alltag und fachlichen/fachdidaktischen/bildungswissenschaftlichen Wissens sowie Konsequenzen für Professionalisierungsprozesse
+    -   Schüler:innenfeedback zur Unterrichtsqualität\
+    -   Vergleichsarbeiten\
+    -   formatives Assessment mithilfe von Dashboards
+:::
+
+##  {.center}
+
+::: {.fragment .highlight-green}
+<center><font style='font-size:5em'>{{< fa comments >}}</font><br> <font style='font-size:1.3em'>Herzlichen Dank für Ihre Aufmerksamkeit! </font></center>
+:::
+
+::: {.callout-note icon="false"}
+## Kontakt:
+
+{{< fa envelope >}} sarah.bez@uni-tuebingen.de
+
+{{< fa envelope >}} wurster@uni-mainz.de
+:::
+
+## References {.smaller}
