@@ -80,19 +80,18 @@ Theoretische Motivierung [{{< fa book-open >}}]{.imp}
 :::
 
 ::: incremental
--   Erwartung an Lehrpersonen: datengestütztes Treffen von Handlungsentscheidungen (DBDM). 
 -   Erwartung an Lehrpersonen: datengestütztes Treffen von Handlungsentscheidungen (DBDM)
 -   zentrale Voraussetzungen für gelingendes DBDM auf individueller Ebene (u.a.) [@datnow2015; @hoogland2016; @schildkamp2014]:
     -   hinreichend ausgeprägte data literacy
     -   entsprechende motivationale Überzeugungen\
 -   gleichzeitig:
     -   eher gering ausgeprägte data literacy [z.B. @kippers2018; @vanderkleij2013]
-    -   wird DBDM von Lehrpersonen als herausfordernd wahrgenommen [z.B. @espin2018; @vangeel2017] TEST
+    -   wird DBDM von Lehrpersonen als herausfordernd wahrgenommen [z.B. @espin2018; @vangeel2017]
 :::
 
 . . .
 
-→ diesbezügliche Professionalisierungsprozesse (auch schon) im Studium anstoßen  \
+→ diesbezügliche Professionalisierungsprozesse (auch schon) im Studium anstoßen\
 
 ## Data Literacy {.smaller}
 
@@ -102,11 +101,16 @@ Theoretische Motivierung [{{< fa book-open >}}]{.imp}
 
 ![[Modell nach @mandinach2016a]](img/Mandinach_Gummer.png){width="753"}
 
-## Motivationale Überzeugungen
+## Motivationale Überzeugungen {.smaller}
 
--   hier konzeptualisiert als Erwartungs- X Wert-Modelle [@eccles2002]
-    -   Expectancy (Erwartungskomponente), häufig self-efficacy
-    -   Value (Wertkomponente/n), häufig attainment, enjoyment, utility, cost 
+-   hier konzeptualisiert als Erwartungs-mal-Wert-Modelle [@eccles2002]
+    -   Expectancy (Erwartungskomponente)
+        -   self-efficacy (Selbstwirksamkeit/Können)
+    -   Value (Wertkomponente)
+        -   attainment (Wichtigkeit/Relevanz)
+        -   enjoyment (Freude)\
+        -   utility (Nutzen)\
+        -   cost (Kosten/Aufwand)
 
 ##  {.smaller}
 
@@ -124,7 +128,7 @@ Aktuelle Metaanalyse [@filderman2021] berichtet
 
 . . .
 
-insgesamt (nur Interventionsstudien mit Lehramtsstudierenden):
+Nur Interventionsstudien mit Lehramtsstudierenden:
 
 -   data literacy: moderate bis große positive signifikate Effekte [@merk2020; @reeves2017; @reeves2017]
 
@@ -140,7 +144,7 @@ insgesamt (nur Interventionsstudien mit Lehramtsstudierenden):
 
 ## Forschungsfragen und Hypothesen
 
-> Inwiefern lassen sich data literacy und motivationale Überzeugungen in einer Online-Kurzintervention fördern? 
+> Inwiefern lassen sich data literacy und motivationale Überzeugungen in einer Online-Kurzintervention fördern?
 
 <br/>
 
@@ -152,7 +156,7 @@ H2: $Δ_{Kontrollgruppe} = 0$ & $Δ_{Kontrollgruppe}$ \< $Δ_{Interventionsgrupp
 
 H3: $Δ_{Kontrollgruppe}$ \< $Δ_{Interventionsgruppe}$
 
-## Design \| Stichprobe
+## Design \| Stichprobe {.smaller}
 
 -   Design
     -   Randomized-Controlled-Trial (RCT), Wartekontrollgruppendesign
@@ -165,7 +169,10 @@ H3: $Δ_{Kontrollgruppe}$ \< $Δ_{Interventionsgruppe}$
 
 ## Design \| Intervention {.smaller}
 
--   6stündige data literacy-Intervention, entwickelt von @merk2020, angelehnt an @mandinach2016a
+-   6stündige data literacy-Intervention (online), entwickelt von @merk2020, angelehnt an @mandinach2016a
+
+. . .
+
 -   Fokus auf
     -   Einführung in DBDM: Chancen und Herausforderungen\
     -   (Quantitative) Datenanalyse: Zentrale Tendenz, Streuung, Verteilungsformen, ...\
@@ -175,16 +182,25 @@ H3: $Δ_{Kontrollgruppe}$ \< $Δ_{Interventionsgruppe}$
 
 ### Design \| Instrumente
 
-{{< ai open-materials >}} https://bit.ly/3Wi7sI4
+{{< ai open-materials >}} https://bit.ly/3Wi7sI4 test
 
-#### Data literacy-Test [@merk2020]
+::: columns
+::: {.column width="50%"}
+#### Data literacy-Test
 
--   entwickelt für Studierende
--   ggf. hier noch Beispielitems zeigen
+-   entwickelt von @merk2020
+:::
+
+::: {.column width="50%"}
+![](img/dltest_item.png){width="800"}
+:::
+:::
+
+. . .
 
 #### Motivationale Überzeugungen
 
--   Instrument von [@thoren2020]
+-   Instrument von @thoren2020
 
 ##  {.smaller}
 
@@ -192,11 +208,19 @@ H3: $Δ_{Kontrollgruppe}$ \< $Δ_{Interventionsgruppe}$
 
 ##  {.smaller}
 
-### Faktorenstruktur und Reliabilitäten
+#### 3-Faktorenstruktur und Reliabilitäten
 
-![](img/items_faktorenanalyse.png){fig-align="left" width="900"}
+![](img/items_faktorenanalyse.png){fig-align="center" width="875"}
 
-3-Faktoren-Modell auf der Basis von CREFA (*𝝌2*(df) = 81.304 (42), *p* = \<.001, CFI = .96, TLI = .92, RMSA = .09, .77 ≤ 𝜔 ≤ .92)
+::: columns
+::: {.column width="50%"}
+Cluster-robuste EFA ![](img/crefa.png)
+:::
+
+::: {.column width="50%"}
+Cluster-robuste CFA \| Multilevel-CFA ![](img/crcfa_mlcfa.png)
+:::
+:::
 
 ## Statistische Analysen
 
@@ -219,13 +243,7 @@ Um auch Evidenz nicht nur gegen sondern auch für einen Nulleffekt generieren zu
 
 ### Ergebnisse \| Effektstärken und Inferenz
 
-für data literacy und jeden Faktor pro Komponente jeweils:
-
--   H1: $Δ_{Kontrollgruppe} = 0$ & $Δ_{Interventionsgruppe} = 0$\
--   H2: $Δ_{Kontrollgruppe} = 0$ & $Δ_{Kontrollgruppe}$ \< $Δ_{Interventionsgruppe}$\
--   H3: $Δ_{Kontrollgruppe}$ \< $Δ_{Interventionsgruppe}$
-
-Tabelle mit pie charts einfügen
+![](img/lcs_pmp_v3.png){fig-align="left"}
 
 ## <!-- Disk--> {auto-animate="true"}
 
@@ -244,8 +262,11 @@ Diskussion [{{< fa arrows-to-circle >}}]{.imp}
 **zentrale Ergebnisse**
 
 -   großer positiver Effekt auf data literacy
--   generell positive motivationale Überzeugungen
--   bis auf self-efficacy und utility (jeweils moderater positiver Effekt) bleiben motivationale Überzeugungen stabil
+-   motivationale Überzeugungen
+    -   generell positive motivationale Überzeugungen
+    -   moderater positiver Effekt auf self-efficacy 
+    -   Nulleffekte bei cost und enjoyment
+    -   inkonklusive Ergebnisse bei utility und attainment
 
 . . .
 
@@ -253,7 +274,7 @@ Diskussion [{{< fa arrows-to-circle >}}]{.imp}
 
 -   Intervention auf data literacy und weniger auf Förderung motivationaler Überzeugungen
 -   keine follow-up-Messung
--   eingeschränkte curriculare Validität des data literacy-Tests aufgrund des Fokuses auf Datenanalyse
+-   eingeschränkte curriculare Validität des data literacy-Tests aufgrund des Fokusses auf Datenanalyse
 
 ## <!-- Theo Mot--> {.smaller auto-animate="true"}
 
@@ -273,16 +294,12 @@ Diskussion [{{< fa arrows-to-circle >}}]{.imp}
 
 ##  {.center}
 
-::: {.fragment .highlight-green}
 <center><font style='font-size:5em'>{{< fa comments >}}</font><br> <font style='font-size:1.3em'>Herzlichen Dank für Ihre Aufmerksamkeit! </font></center>
-:::
 
 ::: {.callout-note icon="false"}
 ## Kontakt:
 
 {{< fa envelope >}} sarah.bez@uni-tuebingen.de
-
-{{< fa envelope >}} wurster@uni-mainz.de
 :::
 
 ## References {.smaller}
