@@ -47,7 +47,7 @@ sash <-
                aes(x,y), fill = "#8cd000") + 
   coord_fixed() +
   annotate(geom = "text", 
-           label = "www.bit.ly/anpassen", 
+           label = "bit.ly/bez01", 
            x = .8, y = .8, 
            angle = 45,
            hjust = 0, vjust = 0,
@@ -70,7 +70,7 @@ ggsave("img/sash.svg", sash)
 :::
 
 ::: footer
-Slides: bit.ly/XYZ
+Folien verfügbar: bit.ly/bez01
 :::
 
 ## <!-- Theo Mot--> {.smaller auto-animate="true"}
@@ -182,7 +182,7 @@ H3: $Δ_{Kontrollgruppe}$ \< $Δ_{Interventionsgruppe}$
 
 ### Design \| Instrumente
 
-{{< ai open-materials >}} https://bit.ly/3Wi7sI4 test
+{{< ai open-materials >}} https://bit.ly/3Wi7sI4
 
 ::: columns
 ::: {.column width="50%"}
