@@ -70,7 +70,7 @@ ggsave("img/sash.svg", sash)
 :::
 
 ::: footer
-Folien verfügbar: bit.ly/bez01
+Folien verfügbar unter: bit.ly/bez01
 :::
 
 ## <!-- Theo Mot--> {.smaller auto-animate="true"}
@@ -99,7 +99,7 @@ Theoretische Motivierung [{{< fa book-open >}}]{.imp}
 
 . . .
 
-![[Modell nach @mandinach2016a]](img/Mandinach_Gummer.png){width="753"}
+![[Modell nach @mandinach2016a]](img/Mandinach_Gummer.png){width="702"}
 
 ## Motivationale Überzeugungen {.smaller}
 
@@ -120,7 +120,7 @@ Aktuelle Metaanalyse [@filderman2021] berichtet
 
 -   starke positive Effekte auf Wissen und Kompetenzen *(g = .67; 95% CI = \[.40, .93\])*
 
--   moderate positive Effekte auf beliefs *(g = .48; 95% CI = \[.17, .79\])*
+-   moderate positive Effekte auf motivationale Überzeugungen *(g = .48; 95% CI = \[.17, .79\])*
 
     -   expectancy-Komponente: *g* = -.74 bis *g* = 3.68
 
@@ -222,7 +222,7 @@ Cluster-robuste CFA \| Multilevel-CFA ![](img/crcfa_mlcfa.png)
 :::
 :::
 
-## Statistische Analysen
+## Statistische Analysen {.smaller}
 
 Multi-group Latent-Change-Score-Modelle [@kievit2018] für Effekte der Intervention auf
 
@@ -235,9 +235,9 @@ Um auch Evidenz nicht nur gegen sondern auch für einen Nulleffekt generieren zu
 
 ##  {.smaller}
 
-### Ergebnisse \| visualisiert
+### Ergebnisse \| visualisiert {.smaller}
 
-![](img/Plot_Effects_of_Intervention.png){fig-align="left"}
+![dargestellt: MW, +- 1 SD](img/Plot_Effects_of_Intervention.png){fig-align="left"}
 
 ##  {.smaller}
 
@@ -264,7 +264,7 @@ Diskussion [{{< fa arrows-to-circle >}}]{.imp}
 -   großer positiver Effekt auf data literacy
 -   motivationale Überzeugungen
     -   generell positive motivationale Überzeugungen
-    -   moderater positiver Effekt auf self-efficacy 
+    -   moderater positiver Effekt auf self-efficacy
     -   Nulleffekte bei cost und enjoyment
     -   inkonklusive Ergebnisse bei utility und attainment
 
