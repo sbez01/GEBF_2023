@@ -10,7 +10,6 @@ format:
       data-background-position: 0 0
     slide-number: true
     controls: true
-    logo: https://drive.google.com/uc?export=view&id=1Eoy1slqV_DDgG50f3V6tc6QvFnhCBE1H
     theme: [dark, css/custom.scss]
     chalkboard:
       theme: whiteboard
@@ -86,7 +85,7 @@ Theoretische Motivierung [{{< fa book-open >}}]{.imp}
     -   entsprechende motivationale Überzeugungen\
 -   gleichzeitig:
     -   eher gering ausgeprägte data literacy [z.B. @kippers2018; @vanderkleij2013]
-    -   wird DBDM von Lehrpersonen als herausfordernd wahrgenommen [z.B. @espin2018; @vangeel2017] test
+    -   wird DBDM von Lehrpersonen als herausfordernd wahrgenommen [z.B. @espin2018; @vangeel2017] 
 :::
 
 . . .
@@ -122,15 +121,15 @@ Aktuelle Metaanalyse [@filderman2021] berichtet
 
 -   moderate positive Effekte auf motivationale Überzeugungen *(g = .48; 95% CI = \[.17, .79\])*
 
-    -   expectancy-Komponente: *g* = -.74 bis *g* = 3.68
+    -   expectancy-Komponente: -.74 < *g* < 3.68
 
-    -   value-Komponente: *g* = -.43 bis *g* = 1.25
+    -   value-Komponente: -.43 < *g* < 1.25
 
 . . .
 
 Nur Interventionsstudien mit Lehramtsstudierenden:
 
--   data literacy: moderate bis große positive signifikate Effekte [@merk2020; @reeves2017; @reeves2017]
+-   data literacy: moderate bis große positive signifikante Effekte [@merk2020; @reeves2017; @reeves2018]
 
     -   self-efficacy: moderate bis große positive (aber nicht immer signifikante) Effekte [@reeves2017; @reeves2018; @reeves2019; @thoren2020]
 
@@ -237,7 +236,7 @@ Um auch Evidenz nicht nur gegen sondern auch für einen Nulleffekt generieren zu
 
 ### Ergebnisse \| visualisiert {.smaller}
 
-![dargestellt: MW, +- 1 SD](img/Plot_Effects_of_Intervention.png){fig-align="left"}
+![dargestellt jeweils: MW, ±1 SD](img/Plot_Effects_of_Intervention.png){fig-align="left"}
 
 ##  {.smaller}
 
@@ -289,7 +288,7 @@ Diskussion [{{< fa arrows-to-circle >}}]{.imp}
 -   Verhältnis von "generischer" data literacy, "spezifischen" DBDM-Situationen im beruflichen Alltag und fachlichen/fachdidaktischen/bildungswissenschaftlichen Wissens sowie Konsequenzen für Professionalisierungsprozesse
     -   Schüler:innenfeedback zur Unterrichtsqualität\
     -   Vergleichsarbeiten\
-    -   formatives Assessment mithilfe von Dashboards
+     -  ...  
 :::
 
 ##  {.center}
@@ -302,4 +301,4 @@ Diskussion [{{< fa arrows-to-circle >}}]{.imp}
 {{< fa envelope >}} sarah.bez@uni-tuebingen.de
 :::
 
-## References {.smaller}
+### References {.smaller}
