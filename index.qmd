@@ -113,29 +113,23 @@ Theoretische Motivierung [{{< fa book-open >}}]{.imp}
 
 ##  {.smaller}
 
-### Förderung von data literacy und motivationalen Überzeugungen bzgl. DBDM
+#### Förderung von data literacy und motivationalen Überzeugungen bzgl. DBDM
 
-Aktuelle Metaanalyse [@filderman2021] berichtet
-
--   starke positive Effekte auf Wissen und Kompetenzen *(g = .67; 95% CI = \[.40, .93\])*
-
--   moderate positive Effekte auf motivationale Überzeugungen *(g = .48; 95% CI = \[.17, .79\])*
-
-    -   expectancy-Komponente: -.74 < *g* < 3.68
-
-    -   value-Komponente: -.43 < *g* < 1.25
+-   Aktuelle Metaanalyse [@filderman2021] berichtet 
+    -   starke positive Effekte auf Wissen und Kompetenzen *(g = .67; 95% CI = \[.40, .93\])* 
+    -   moderate positive Effekte auf motivationale Überzeugungen *(g = .48; 95% CI = \[.17, .79\])* 
+        -   expectancy-Komponente: -.74 < *g* < 3.68 
+        -   value-Komponente: -.43 < *g* < 1.25
 
 . . .
 
-Nur Interventionsstudien mit Lehramtsstudierenden:
+-   Nur Interventionsstudien mit Lehramtsstudierenden: 
+    -   data literacy: moderate bis große positive signifikante Effekte [@merk2020; @reeves2017; @reeves2018] 
+    -   motivationale Überzeugungen  
+        -   self-efficacy: moderate bis große positive (aber nicht immer signifikante) Effekte [@reeves2017; @reeves2018; @reeves2019; @thoren2020] 
+        -   value-Komponenten: kleine bis moderate, meist nicht-signifikante Effekte [@thoren2020]
 
--   data literacy: moderate bis große positive signifikante Effekte [@merk2020; @reeves2017; @reeves2018]
-
-    -   self-efficacy: moderate bis große positive (aber nicht immer signifikante) Effekte [@reeves2017; @reeves2018; @reeves2019; @thoren2020]
-
-    -   value-Komponenten: kleine bis moderate, meist nicht-signifikante Effekte [@thoren2020]
-
-## <!-- Theo Mot--> {auto-animate="false"}
+## <!-- RQ--> {auto-animate="false"}
 
 ::: {style="margin-top: 300px; font-size: 2em; color:#8cd000; margin-left: 110px;"}
 [die vorliegende Studie {{< fa magnifying-glass >}}]{.imp}
@@ -230,7 +224,7 @@ Multi-group Latent-Change-Score-Modelle [@kievit2018] für Effekte der Intervent
 
 . . .
 
-Um auch Evidenz nicht nur gegen sondern auch für einen Nulleffekt generieren zu können: Anwendung von Bayesianischem Hypothesentesten für Strukturgleichungsmodelle [@gu2019]
+Um Evidenz nicht nur gegen sondern auch für einen Nulleffekt generieren zu können: Anwendung von Bayesianischem Hypothesentesten für Strukturgleichungsmodelle [@gu2019]
 
 ##  {.smaller}
 
@@ -275,7 +269,7 @@ Diskussion [{{< fa arrows-to-circle >}}]{.imp}
 -   keine follow-up-Messung
 -   eingeschränkte curriculare Validität des data literacy-Tests aufgrund des Fokusses auf Datenanalyse
 
-## <!-- Theo Mot--> {.smaller auto-animate="true"}
+## <!-- Disk--> {.smaller auto-animate="true"}
 
 ::: {style="margin-top: 0px;font-size: 1.5em; color:#ffffff; margin-left: 0px;"}
 Diskussion [{{< fa arrows-to-circle >}}]{.imp}
@@ -287,7 +281,7 @@ Diskussion [{{< fa arrows-to-circle >}}]{.imp}
 -   Entwicklung (und ggf. Förderung?) motivationaler Überzeugungen über alle Phasen der Lehrer:innenbildung
 -   Verhältnis von "generischer" data literacy, "spezifischen" DBDM-Situationen im beruflichen Alltag und fachlichen/fachdidaktischen/bildungswissenschaftlichen Wissens sowie Konsequenzen für Professionalisierungsprozesse
     -   Schüler:innenfeedback zur Unterrichtsqualität\
-    -   Vergleichsarbeiten\
+    -   Lernverlaufsdiagnostik\
      -  ...  
 :::
 
@@ -301,4 +295,4 @@ Diskussion [{{< fa arrows-to-circle >}}]{.imp}
 {{< fa envelope >}} sarah.bez@uni-tuebingen.de
 :::
 
-### References {.smaller}
+## References {.smaller}
